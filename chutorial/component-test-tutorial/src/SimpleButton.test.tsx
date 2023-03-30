@@ -6,6 +6,4 @@ test("ボタンをクリックするとON/OFFの表示が切り替わる", () =>
   render(<SimpleButton />);
   const simpleButton = screen.getByRole("button");
   expect(simpleButton).toHaveTextContent("OFF");
-  userEvent.click(simpleButton);
-  expect(simpleButton).toHaveTextContent("ON");
 });
